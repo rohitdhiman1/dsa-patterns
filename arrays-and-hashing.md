@@ -6,30 +6,10 @@ Trade O(n) memory for O(1) lookups: remember what you've seen so each element is
 
 ## Spot it
 
-```mermaid
-flowchart TD
-    W{"Contiguous range, running rule?<br/><small>longest / shortest with X, no negatives</small>"}
-    W -- yes --> SW["Sliding window<br/><small>see the sliding window doc</small>"]
-    W -- no --> S{"Sorted, or a pair from the ends?<br/><small>input sorted, O(1) space wanted</small>"}
-    S -- yes --> TP["Two pointers<br/><small>or binary search · see docs</small>"]
-    S -- no --> R{"What do you need to remember?"}
-    R --> H & P & I
-
-    subgraph H["Hash lookups"]
-        direction TB
-        A["<b>A · Count / complement</b><br/>two sum, dupes, anagram<br/><i>look up, then insert</i>"]
-        B["<b>B · Group / bucket</b><br/>group anagrams, top k O(n)<br/><i>key → list, count → list</i>"]
-        C["<b>C · Set as sequence</b><br/>longest consecutive run<br/><i>start only at run starts</i>"]
-    end
-    subgraph P["Prefix tricks"]
-        direction TB
-        D["<b>D · Prefix sum + map</b><br/>subarray sum k, negatives<br/><i>count prefix − k seen</i>"]
-        E["<b>E · Prefix / suffix</b><br/>product except self, pivot<br/><i>left pass, then right pass</i>"]
-    end
-    subgraph I["In place"]
-        F["<b>F · Index as hash</b><br/>first missing positive<br/><i>send x home to index x−1</i>"]
-    end
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arrays-and-hashing-spot-it-dark.svg">
+  <img alt="Spot it: two gates (sliding window, two pointers), then what you need to remember picks flavor A to F" src="assets/arrays-and-hashing-spot-it-light.svg" width="760">
+</picture>
 
 Rule out the window and pointer patterns first. Otherwise, what you need to remember picks A to F; strings route through the section near the end.
 

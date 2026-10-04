@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 636" width="760" height="636" role="img" aria-label="Two gates, then what you remember picks the flavor" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6e7681"/></marker></defs>
+<text x="24" y="30" text-anchor="start" font-size="15" fill="#e6edf3" font-weight="600">Two gates, then what you remember picks the flavor</text>
+<g fill="none" stroke="#6e7681" stroke-width="1.25">
+<path d="M430 80H505" marker-end="url(#ah)"/>
+<path d="M280 108V140" marker-end="url(#ah)"/>
+<path d="M430 168H505" marker-end="url(#ah)"/>
+<path d="M280 196V234" marker-end="url(#ah)"/>
+<path d="M136 300V324" marker-end="url(#ah)"/>
+<path d="M380 300V324" marker-end="url(#ah)"/>
+<path d="M624 300V324" marker-end="url(#ah)"/>
+<path d="M280 278V300M136 300H624"/>
+</g>
+<text x="467" y="72" text-anchor="middle" font-size="11.5" fill="#9198a1">yes</text>
+<text x="290" y="128" text-anchor="start" font-size="11.5" fill="#9198a1">no</text>
+<text x="467" y="160" text-anchor="middle" font-size="11.5" fill="#9198a1">yes</text>
+<text x="290" y="219" text-anchor="start" font-size="11.5" fill="#9198a1">no</text>
+<rect x="130.0" y="52.0" width="300" height="56" rx="8" fill="none" stroke="#6e7681" stroke-width="1.25"/>
+<text x="280" y="76" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">Contiguous range, running rule?</text>
+<text x="280" y="94" text-anchor="middle" font-size="11.5" fill="#9198a1">longest / shortest with X, no negatives</text>
+<rect x="505.0" y="52.0" width="230" height="56" rx="8" fill="#21262d" stroke="#6e7681" stroke-width="1.25"/>
+<text x="620" y="76" text-anchor="middle" font-size="13" fill="#e6edf3">Sliding window</text>
+<text x="620" y="94" text-anchor="middle" font-size="11.5" fill="#9198a1">see the sliding window doc</text>
+<rect x="130.0" y="140.0" width="300" height="56" rx="8" fill="none" stroke="#6e7681" stroke-width="1.25"/>
+<text x="280" y="164" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">Sorted, or a pair from the ends?</text>
+<text x="280" y="182" text-anchor="middle" font-size="11.5" fill="#9198a1">input sorted, O(1) space wanted</text>
+<rect x="505.0" y="140.0" width="230" height="56" rx="8" fill="#21262d" stroke="#6e7681" stroke-width="1.25"/>
+<text x="620" y="164" text-anchor="middle" font-size="13" fill="#e6edf3">Two pointers</text>
+<text x="620" y="182" text-anchor="middle" font-size="11.5" fill="#9198a1">or binary search · see docs</text>
+<rect x="150.0" y="234.0" width="260" height="44" rx="8" fill="none" stroke="#6e7681" stroke-width="1.25"/>
+<text x="280" y="260" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">What do you need to remember?</text>
+<rect x="24.0" y="324" width="224" height="288" rx="8" fill="none" stroke="#6e7681" stroke-width="1.25"/>
+<text x="136" y="346" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">Hash lookups</text>
+<rect x="268.0" y="324" width="224" height="204" rx="8" fill="none" stroke="#6e7681" stroke-width="1.25"/>
+<text x="380" y="346" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">Prefix tricks</text>
+<rect x="512.0" y="324" width="224" height="120" rx="8" fill="none" stroke="#6e7681" stroke-width="1.25"/>
+<text x="624" y="346" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">In place</text>
+<rect x="40.0" y="356" width="192" height="72" rx="8" fill="#5b9cff" fill-opacity="0.12" stroke="#5b9cff" stroke-width="2"/>
+<text x="136" y="380" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">A · Count / complement</text>
+<text x="136" y="396" text-anchor="middle" font-size="11.5" fill="#9198a1">two sum, dupes, anagram</text>
+<text x="136" y="412" text-anchor="middle" font-size="11.5" fill="#e6edf3">look up, then insert</text>
+<rect x="40.0" y="440" width="192" height="72" rx="8" fill="#5b9cff" fill-opacity="0.12" stroke="#5b9cff" stroke-width="2"/>
+<text x="136" y="464" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">B · Group / bucket</text>
+<text x="136" y="480" text-anchor="middle" font-size="11.5" fill="#9198a1">group anagrams, top k O(n)</text>
+<text x="136" y="496" text-anchor="middle" font-size="11.5" fill="#e6edf3">key → list, count → list</text>
+<rect x="40.0" y="524" width="192" height="72" rx="8" fill="#5b9cff" fill-opacity="0.12" stroke="#5b9cff" stroke-width="2"/>
+<text x="136" y="548" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">C · Set as sequence</text>
+<text x="136" y="564" text-anchor="middle" font-size="11.5" fill="#9198a1">longest consecutive run</text>
+<text x="136" y="580" text-anchor="middle" font-size="11.5" fill="#e6edf3">start only at run starts</text>
+<rect x="284.0" y="356" width="192" height="72" rx="8" fill="#5b9cff" fill-opacity="0.12" stroke="#5b9cff" stroke-width="2"/>
+<text x="380" y="380" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">D · Prefix sum + map</text>
+<text x="380" y="396" text-anchor="middle" font-size="11.5" fill="#9198a1">subarray sum k, negatives</text>
+<text x="380" y="412" text-anchor="middle" font-size="11.5" fill="#e6edf3">count prefix − k seen</text>
+<rect x="284.0" y="440" width="192" height="72" rx="8" fill="#5b9cff" fill-opacity="0.12" stroke="#5b9cff" stroke-width="2"/>
+<text x="380" y="464" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">E · Prefix / suffix</text>
+<text x="380" y="480" text-anchor="middle" font-size="11.5" fill="#9198a1">product except self, pivot</text>
+<text x="380" y="496" text-anchor="middle" font-size="11.5" fill="#e6edf3">left pass, then right pass</text>
+<rect x="528.0" y="356" width="192" height="72" rx="8" fill="#5b9cff" fill-opacity="0.12" stroke="#5b9cff" stroke-width="2"/>
+<text x="624" y="380" text-anchor="middle" font-size="13" fill="#e6edf3" font-weight="600">F · Index as hash</text>
+<text x="624" y="396" text-anchor="middle" font-size="11.5" fill="#9198a1">first missing positive</text>
+<text x="624" y="412" text-anchor="middle" font-size="11.5" fill="#e6edf3">send x home to index x−1</text>
+</svg>
