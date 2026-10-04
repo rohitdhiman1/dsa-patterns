@@ -15,14 +15,14 @@ Rule out the window and pointer patterns first. Otherwise, what you need to reme
 
 ## The 6 flavors at a glance
 
-| # | Flavor | Wording sounds like | Map / array holds | Key move | Problems |
-| --- | --- | --- | --- | --- | --- |
-| A | Count / complement | "two sum", "contains duplicate", "valid anagram", "ransom note" | value → count or index | check `target - x` BEFORE inserting `x` | LC 1 · 217 · 242 · 383 · 454 |
-| B | Group / bucket | "group anagrams", "top k frequent", "sort by frequency" | canonical key → list · count → list | key from sorted chars or `int[26]` | LC 49 · 249 · 347 · 451 |
-| C | Set as sequence | "longest consecutive", "in O(n)" | `HashSet` of values | start counting only where `x - 1` is absent | LC 128 |
-| D | Prefix sum + map | "subarray sum equals k", "divisible by k", "equal 0s and 1s", negatives allowed | prefix sum → count (or first index) | `res += count[prefix - k]` | LC 560 · 974 · 523 · 525 · 930 |
-| E | Prefix / suffix arrays | "product except self", "pivot index", "range sum query" | running sum / product from each side | left pass, right pass, combine | LC 238 · 724 · 303 · 42 |
-| F | Index as hash | "first missing positive", "missing / duplicate in 1..n", O(1) space | the array itself | swap `x` to index `x - 1`, or sign-mark it | LC 41 · 448 · 442 · 268 |
+| Flavor | Sounds like | What to store, then the key move | Practice |
+| --- | --- | --- | --- |
+| **A · Count / complement** | two sum<br>contains duplicate<br>valid anagram<br>ransom note | **Store:** value → count or index<br>**Move:** check `target - x` **before** inserting `x` | LC 1, 217, 242, 383, 454 |
+| **B · Group / bucket** | group anagrams<br>top k frequent<br>sort by frequency | **Store:** canonical key → list, or count → list<br>**Move:** key from sorted chars or `int[26]` | LC 49, 249, 347, 451 |
+| **C · Set as sequence** | longest consecutive<br>"in O(n)" | **Store:** `HashSet` of values<br>**Move:** start counting only where `x - 1` is absent | LC 128 |
+| **D · Prefix sum + map** | subarray sum equals k<br>divisible by k<br>equal 0s and 1s<br>negatives allowed | **Store:** prefix sum → count (or first index)<br>**Move:** `res += count[prefix - k]` | LC 560, 974, 523, 525, 930 |
+| **E · Prefix / suffix arrays** | product except self<br>pivot index<br>range sum query | **Store:** running sum / product from each side<br>**Move:** left pass, right pass, combine | LC 238, 724, 303, 42 |
+| **F · Index as hash** | first missing positive<br>missing / duplicate in 1..n<br>O(1) space | **Store:** the array itself<br>**Move:** swap `x` to index `x - 1`, or sign-mark it | LC 41, 448, 442, 268 |
 
 Top K with a heap lives in the Heap doc (A). Bucket (B here) is the O(n) alternative to mention.
 
