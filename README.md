@@ -8,11 +8,12 @@ Interview prep notes, organized by pattern rather than by problem. Each page cov
 | --- | --- | --- |
 | Arrays & Hashing | complement, grouping, sets, prefix sums, index as hash, string techniques | [arrays-and-hashing.md](arrays-and-hashing.md) |
 | Two Pointers | | planned |
-| Sliding Window | | planned |
-| Binary Search | | planned |
-| Stack | | planned |
-| Heap | | planned |
-| Trie | | planned |
+| Sliding Window | fixed size, shortest / longest valid, counting, window max | [sliding-window.md](sliding-window.md) |
+| Binary Search | exact match, boundary, rotated / peak, answer space, 2D, partition | [binary-search.md](binary-search.md) |
+| Stack | matching pairs, collapse, expressions, monotonic stack, design | [stack.md](stack.md) |
+| Trees | top-down / bottom-up DFS, level order, BST, build / encode, edge-list trees | [trees.md](trees.md) |
+| Trie | core trie, wildcard, dictionary scan, grid search, prefix counts, bitwise | [trie.md](trie.md) |
+| Heap | top K, two heaps, repeat best, k-way merge, scheduling, Dijkstra | [heap.md](heap.md) |
 | Dynamic Programming | | planned |
 
 ## How to use a page
