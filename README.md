@@ -7,7 +7,7 @@ Interview prep notes, organized by pattern rather than by problem. Each page cov
 | Pattern | Covers | Notes |
 | --- | --- | --- |
 | Arrays & Hashing | complement, grouping, sets, prefix sums, index as hash, string techniques | [arrays-and-hashing.md](arrays-and-hashing.md) |
-| Two Pointers | | planned |
+| Two Pointers | pair sum, weaker side, mirror, read / write, fast / slow, merge | [two-pointers.md](two-pointers.md) |
 | Sliding Window | fixed size, shortest / longest valid, counting, window max | [sliding-window.md](sliding-window.md) |
 | Binary Search | exact match, boundary, rotated / peak, answer space, 2D, partition | [binary-search.md](binary-search.md) |
 | Stack | matching pairs, collapse, expressions, monotonic stack, design | [stack.md](stack.md) |
